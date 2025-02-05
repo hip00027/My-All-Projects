@@ -6,9 +6,9 @@ from google.colab.patches import cv2_imshow
 
 import pytesseract #to extract license plate text from detected license
 
-pytesseract.pytesseract.tesseract_cmd = r'/content'
+pytesseract.pytesseract.tesseract_cmd = r'Python_Projects'
 
-image = cv2.imread(r'/content/jeep.jpg')
+image = cv2.imread(r'Python_Projects/jeep.jpg')
 resized_image = imutils.resize(image)
 cv2_imshow(image)
 cv2.waitKey(0)
